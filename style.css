@@ -3,76 +3,93 @@
     src: url(./fonts/fonts.ttf);
 }
 
-*{
+* {
     font-family: minecraft, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-body{
-    
-}
 
 
-.tablegenerator{
+.tablegenerator {
     align-items: center;
     display: flex;
     justify-content: center;
-    font-size: 50px;
+    font-size: 70px;
     height: 200px;
 }
 
-
-.forms{
+.forms {
     align-items: center;
     display: flex;
     justify-content: center;
     gap: 10px;
     font-size: 30px;
-    align-items: center;
     text-align: center;
-
 }
 
-.forms input{
+.forms input {
     height: 50px;
-    align-items: center ;
     text-align: center;
     font-size: 30px;
-    
 }
 
-#btn{
+#btn {
     background-color: black;
     color: white;
     padding: 20px;
-    align-items: center;
-    text-align: center;
-    align-content: center;
-    display: flex;
     border: 1px solid black;
     transition: 0.5s ease;
     cursor: pointer;
 }
 
-#btn:hover{
+#btn:hover {
     background-color: white;
     color: black;
 }
 
-
-.tablearea{
+/* Table container */
+.tablearea {
     background-color: rgb(247, 247, 247);
-    height: 900px;
-    max-height: 2000px;
+    height: auto;
+    max-height: 900px;
+    max-width: 100%;
     margin-top: 50px;
     border: 10px solid black;
-    margin: 30px;
     padding: 10px;
+    overflow-x: auto; /* Allow horizontal scroll */
 }
 
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
 
+@media (max-width: 600px) {
+    .forms {
+        flex-direction: column;
+        gap: 20px;
+    }
 
+    .tablegenerator {
+        font-size: 50px;
+    }
 
+    .forms input {
+        font-size: 20px;
+        height: 40px;
+        max-width: 100%;
+    }
 
+    #btn {
+        padding: 15px;
+        font-size: 20px;
+    }
+}
