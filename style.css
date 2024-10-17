@@ -9,6 +9,11 @@
     padding: 0;
 }
 
+body{
+    background: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+
+}
+
 
 
 .tablegenerator {
@@ -17,6 +22,9 @@
     justify-content: center;
     font-size: 70px;
     height: 200px;
+}
+.tablegenerator p{
+    text-align: center;
 }
 
 .forms {
